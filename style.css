@@ -54,3 +54,29 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/* Primeiro, selecionamos a lista (ul) que segura os itens */
+nav ul {
+    display: flex;            /* Isso ativa o modo "um do lado do outro" */
+    justify-content: center;   /* Isso centraliza os links no meio da tela */
+    list-style: none;         /* Isso tira as bolinhas brancas da lista */
+    padding: 0;
+}
+
+/* Agora, damos um espaço entre os itens */
+nav li {
+    margin: 0 15px;           /* 15px de espaço na esquerda e na direita */
+}
+
+/* Para deixar os links bonitos (sem aquele sublinhado azul padrão) */
+nav a {
+    text-decoration: none;    /* Tira o sublinhado */
+    color: #03dac6;           /* Cor verde água que usamos antes */
+    font-weight: bold;
+    text-transform: uppercase; /* Deixa tudo em maiúsculo */
+}
+
+/* Efeito de passar o mouse */
+nav a:hover {
+    color: #ffffff;           /* Muda para branco quando passa o mouse */
+}
